@@ -1,9 +1,13 @@
 # Webscraping 
 
 ----------------------------------------------------------------
+Guardando a pagina em que quero extrair uma informação , na variavel res
+```
 import requests
 res = requests.get("https://pypi.org/project/selenium/")
+```
 
+```
 try:
     res.raise_for_status()
     print("Check")
@@ -13,4 +17,5 @@ try:
 
 except Exception as exc:
     print("Error:%s" % (exc))
+```
 ---------------------------------------------------------------
